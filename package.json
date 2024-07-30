@@ -1,10 +1,14 @@
 {
   "name": "test-1.0",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
+  "engine":{
+    "node":"14.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "netlify-lambda build src"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +21,8 @@
     "express-validator": "^7.1.0",
     "jsonwebtoken": "^9.0.2",
     "mssql": "^11.0.1",
-    "path": "^0.12.7"
+    "netlify-lambda": "^2.0.16",
+    "path": "^0.12.7",
+    "serverless-http": "^3.2.0"
   }
 }
